@@ -1,0 +1,31 @@
+{
+  "name": "goat-swap-decoder",
+  "version": "1.0.4",
+  "main": "dist/cjs/index.js",
+  "module": "dist/js/index.js",
+  "types": "dist/types/index.d.ts",
+  "license": "MIT",
+  "scripts": {
+    "build": "tsc",
+    "watch": "tsc -w",
+    "start": "npm run build && node dist/main.js",
+    "prepublishOnly": "npm run build"
+  },
+  "devDependencies": {
+    "@types/bn.js": "^5.1.5",
+    "i": "^0.3.7",
+    "npm": "^10.8.0",
+    "typescript": "^5.4.5"
+  },
+  "dependencies": {
+    "@coral-xyz/anchor": "^0.29.0",
+    "@solana/web3.js": "^1.91.8",
+    "decimal.js": "^10.4.3",
+    "goatswap-sdk": "^1.0.0"
+  },
+  "files": [
+    "dist/cjs",
+    "dist/js",
+    "dist/types"
+  ]
+}
